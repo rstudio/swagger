@@ -1,33 +1,12 @@
-#' Path to Swagger Resources
+#' swagger: Dynamically Generates Documentation from a Swagger-Compliant API
 #'
-#' Retrieves the path to swagger resources.
+#' Swagger is a collection of HTML, Javascript, and CSS assets that
+#' dynamically generate beautiful documentation from a Swagger-compliant API.
 #'
-#' @examples
+#' The main purpose of this package is to enable package authors to create
+#' APIs that are compatible with \link{https://swagger.io/}
+#' and \link{https://www.openapis.org/}.
 #'
-#' if (interactive()) {
-#'   browseURL(swagger_path())
-#' } else {
-#'   print(paste("You can explore swagger resources under: ", swagger_path()))
-#' }
+#' To learn more about Swagger visit: \link{https://swagger.io/swagger-ui/}
 #'
-#' @export
-swagger_path <- function() {
-  system.file("dist", package = "swagger")
-}
-
-#' Path to Swagger Index
-#'
-#' Retrieves the path to the swagger index file.
-#'
-#' @examples
-#'
-#' if (interactive()) {
-#'   browseURL(swagger_index())
-#' } else {
-#'   print(paste("You can use swagger under: ", swagger_index()))
-#' }
-#'
-#' @export
-swagger_index <- function() {
-  system.file("dist/index.html", package = "swagger")
-}
+"_PACKAGE"
