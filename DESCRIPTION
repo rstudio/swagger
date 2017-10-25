@@ -1,6 +1,6 @@
 Package: swagger
 Type: Package
-Title: Dynamically Generates Documentation from a Swagger-compliant API
+Title: Dynamically Generates Documentation from a Swagger-Compliant API
 Version: 3.4.0
 Authors@R: c(
     person("Javier", "Luraschi", email = "javier@rstudio.com", role = c("aut", "cre")),
