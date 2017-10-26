@@ -1,6 +1,6 @@
 Package: swagger
 Type: Package
-Title: Dynamically Generates Documentation from a Swagger-Compliant API
+Title: Dynamically Generates Documentation from a 'Swagger' Compliant API
 Version: 3.4.0
 Authors@R: c(
     person("Javier", "Luraschi", email = "javier@rstudio.com", role = c("aut", "cre")),
@@ -8,8 +8,9 @@ Authors@R: c(
     person(family = "SmartBear Software", role = c("aut", "cph"))
     )
 Maintainer: Javier Luraschi <javier@rstudio.com>
-Description: Swagger is a collection of HTML, Javascript, and CSS assets that
-  dynamically generate beautiful documentation from a Swagger-compliant API.
+Description: A collection of 'HTML', 'JavaScript', and 'CSS' assets that
+  dynamically generate beautiful documentation from a 'Swagger' compliant API:
+  <https://swagger.io/specification/>.
 License: Apache License 2.0 | file LICENSE
 Encoding: UTF-8
 LazyData: true

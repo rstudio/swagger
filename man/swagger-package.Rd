@@ -11,10 +11,10 @@ dynamically generate beautiful documentation from a Swagger-compliant API.
 }
 \details{
 The main purpose of this package is to enable package authors to create
-APIs that are compatible with \link{https://swagger.io/}
-and \link{https://www.openapis.org/}.
+APIs that are compatible with \url{https://swagger.io/}
+and \url{https://www.openapis.org/}.
 
-To learn more about Swagger visit: \link{https://swagger.io/swagger-ui/}
+To learn more about Swagger visit: \url{https://swagger.io/swagger-ui/}
 }
 \seealso{
 Useful links:
