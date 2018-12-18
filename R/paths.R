@@ -49,7 +49,7 @@ swagger_spec <- function(apiPath = "http://petstore.swagger.io/v2/swagger.json")
 
   index_file <- swagger_index()
   index_txt <- paste0(readLines(index_file), collapse = "\n")
-  index_txt <- sub("(http|https)://petstore.swagger.io/v2/swagger.json", apiPath, index_txt)
+  index_txt <- sub("\"(http|https)://petstore.swagger.io/v2/swagger.json\"", apiPath, index_txt)
 
   index_txt
 }
