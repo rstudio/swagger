@@ -2,3 +2,4 @@
 
 export(swagger_index)
 export(swagger_path)
+export(swagger_spec)
