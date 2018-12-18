@@ -2,9 +2,12 @@
 % Please edit documentation in R/paths.R
 \name{swagger_index}
 \alias{swagger_index}
+\alias{swagger_index3}
 \title{Path to Swagger Index}
 \usage{
 swagger_index()
+
+swagger_index3()
 }
 \description{
 Retrieves the path to the swagger index file.

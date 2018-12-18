@@ -2,9 +2,12 @@
 % Please edit documentation in R/paths.R
 \name{swagger_spec}
 \alias{swagger_spec}
+\alias{swagger_spec3}
 \title{Swagger Index File with OpenAPI Path}
 \usage{
 swagger_spec(apiPath = "http://petstore.swagger.io/v2/swagger.json")
+
+swagger_spec3(apiPath = "http://petstore.swagger.io/v2/swagger.json")
 }
 \arguments{
 \item{apiPath}{Path to an openAPI specification}

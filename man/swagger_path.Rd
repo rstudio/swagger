@@ -2,9 +2,12 @@
 % Please edit documentation in R/paths.R
 \name{swagger_path}
 \alias{swagger_path}
+\alias{swagger_path3}
 \title{Path to Swagger Resources}
 \usage{
 swagger_path()
+
+swagger_path3()
 }
 \description{
 Retrieves the path to swagger resources.
