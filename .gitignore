@@ -4,3 +4,4 @@
 .RData
 .Ruserdata
 .Renviron
+inst/dist/*.map

@@ -2,3 +2,5 @@
 ^\.Rproj\.user$
 README.md
 README.Rmd
+^scripts
+^inst/dist/.*\.map$
