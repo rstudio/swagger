@@ -5,7 +5,14 @@ library(devtools)
 
 (function() {
   swagger_ui_version <- "3.20.3"
-  to_location <- file.path(devtools::as.package(".")$path, "inst", "dist")
+  to_location <- file.path(
+    devtools::as.package(".")$path,
+    "inst",
+    paste0(
+      "dist",
+      strsplit(swagger_ui_version, ".", fixed = TRUE)[[1]][[1]]
+    )
+  )
 
   tmp_location <- tempdir()
   on.exit({
