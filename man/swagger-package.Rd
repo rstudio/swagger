@@ -34,6 +34,7 @@ Authors:
 
 Other contributors:
 \itemize{
+  \item Barret Schloerke \email{barret@rstudio.com} [contributor]
   \item  RStudio [copyright holder]
 }
 

@@ -2,6 +2,7 @@ Dynamically Generate Documentation from a 'Swagger' Compliant API
 ================
 
 [![CRAN\_Status\_Badge](https://www.r-pkg.org/badges/version/swagger)](https://cran.r-project.org/package=swagger)
+[![Travis-CI Build Status](https://travis-ci.org/schloerke/swagger.svg?branch=master)](https://travis-ci.org/schloerke/swagger)
 
 Swagger is a collection of HTML, Javascript, and CSS assets that dynamically generate beautiful documentation from a Swagger-compliant API.
 
