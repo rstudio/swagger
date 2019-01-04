@@ -49,22 +49,22 @@ swagger_index <- function(version = "3") {
 #'
 #' Produces the content for a \code{index.html} file that will attempt to access a provided API path.
 #'
-#' @param apiPath Path to an openAPI specification
+#' @param api_path Path to an openAPI specification
 #' @template param-version
 #' @return large string containing the contents of \code{\link{swagger_index}()} with
-#'   the appropriate speicification path changed to the \code{apiPath} value.
+#'   the appropriate speicification path changed to the \code{api_path} value.
 #' @examples
 #' if (interactive()) {
 #'   swagger_spec("https://developer.uspto.gov/ibd-api/swagger.json")
 #' }
 #' @export
 #' @rdname swagger_spec
-swagger_spec <- function(apiPath = "http://petstore.swagger.io/v2/swagger.json", version = "3") {
+swagger_spec <- function(api_path = "http://petstore.swagger.io/v2/swagger.json", version = "3") {
   index_file <- swagger_index(version = version)
   index_txt <- paste0(readLines(index_file), collapse = "\n")
 
   if (version == "3") {
-    index_txt <- sub("\"(http|https)://petstore.swagger.io/v2/swagger.json\"", apiPath, index_txt)
+    index_txt <- sub("\"(http|https)://petstore.swagger.io/v2/swagger.json\"", api_path, index_txt)
   } else {
     stop("swagger_spec not implemented for version: ", version)
   }

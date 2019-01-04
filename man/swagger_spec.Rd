@@ -4,17 +4,17 @@
 \alias{swagger_spec}
 \title{Swagger Index File with OpenAPI Path}
 \usage{
-swagger_spec(apiPath = "http://petstore.swagger.io/v2/swagger.json",
+swagger_spec(api_path = "http://petstore.swagger.io/v2/swagger.json",
   version = "3")
 }
 \arguments{
-\item{apiPath}{Path to an openAPI specification}
+\item{api_path}{Path to an openAPI specification}
 
 \item{version}{Major version number to be used for Swagger UI.  Currently version \code{"3"} is compatible with OpenAPI spec 2.0, 3.0.}
 }
 \value{
 large string containing the contents of \code{\link{swagger_index}()} with
-  the appropriate speicification path changed to the \code{apiPath} value.
+  the appropriate speicification path changed to the \code{api_path} value.
 }
 \description{
 Produces the content for a \code{index.html} file that will attempt to access a provided API path.
