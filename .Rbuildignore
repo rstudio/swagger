@@ -6,3 +6,4 @@ README.Rmd
 ^inst/dist.*/.*\.map$
 ^man-roxygen
 ^\.travis\.yml$
+^\.lintr$
