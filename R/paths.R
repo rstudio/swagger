@@ -1,7 +1,13 @@
+match_version <- function(version = "3") {
+  match.arg(version, c("3"), several.ok = FALSE)
+}
+
+
 #' Path to Swagger Resources
 #'
 #' Retrieves the path to swagger resources.
 #'
+#' @template param-version
 #' @examples
 #'
 #' if (interactive()) {
@@ -12,19 +18,18 @@
 #'
 #' @export
 #' @rdname swagger_path
-swagger_path <- function() {
-  swagger_path3()
-}
-#' @export
-#' @rdname swagger_path
-swagger_path3 <- function() {
-  system.file("dist3", package = "swagger")
+swagger_path <- function(version = "3") {
+  system.file(
+    paste0("dist", match_version(version)),
+    package = "swagger"
+  )
 }
 
 #' Path to Swagger Index
 #'
 #' Retrieves the path to the swagger index file.
 #'
+#' @template param-version
 #' @examples
 #'
 #' if (interactive()) {
@@ -35,21 +40,17 @@ swagger_path3 <- function() {
 #'
 #' @export
 #' @rdname swagger_index
-swagger_index <- function() {
-  swagger_index3()
-}
-#' @export
-#' @rdname swagger_index
-swagger_index3 <- function() {
-  system.file("dist/index.html", package = "swagger")
+swagger_index <- function(version = "3") {
+  file.path(swagger_path(version = version), "index.html")
 }
 
 
 #' Swagger Index File with OpenAPI Path
 #'
-#' Produces a \code{index.html} file that will attempt to access a provided API path.
+#' Produces the content for a \code{index.html} file that will attempt to access a provided API path.
 #'
 #' @param apiPath Path to an openAPI specification
+#' @template param-version
 #' @return large string containing the contents of \code{\link{swagger_index}()} with
 #'   the appropriate speicification path changed to the \code{apiPath} value.
 #' @examples
@@ -58,16 +59,15 @@ swagger_index3 <- function() {
 #' }
 #' @export
 #' @rdname swagger_spec
-swagger_spec <- function(apiPath = "http://petstore.swagger.io/v2/swagger.json") {
-  swagger_spec3(apiPath = apiPath)
-}
-#' @export
-#' @rdname swagger_spec
-swagger_spec3 <- function(apiPath = "http://petstore.swagger.io/v2/swagger.json") {
-
-  index_file <- swagger_index()
+swagger_spec <- function(apiPath = "http://petstore.swagger.io/v2/swagger.json", version = "3") {
+  index_file <- swagger_index(version = version)
   index_txt <- paste0(readLines(index_file), collapse = "\n")
-  index_txt <- sub("\"(http|https)://petstore.swagger.io/v2/swagger.json\"", apiPath, index_txt)
+
+  if (version == "3") {
+    index_txt <- sub("\"(http|https)://petstore.swagger.io/v2/swagger.json\"", apiPath, index_txt)
+  } else {
+    stop("swagger_spec not implemented for version: ", version)
+  }
 
   index_txt
 }

@@ -2,12 +2,12 @@
 % Please edit documentation in R/paths.R
 \name{swagger_path}
 \alias{swagger_path}
-\alias{swagger_path3}
 \title{Path to Swagger Resources}
 \usage{
-swagger_path()
-
-swagger_path3()
+swagger_path(version = "3")
+}
+\arguments{
+\item{version}{Major version number to be used for Swagger UI.  Currently version \code{"3"} is compatible with OpenAPI spec 2.0, 3.0.}
 }
 \description{
 Retrieves the path to swagger resources.

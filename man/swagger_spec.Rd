@@ -2,22 +2,22 @@
 % Please edit documentation in R/paths.R
 \name{swagger_spec}
 \alias{swagger_spec}
-\alias{swagger_spec3}
 \title{Swagger Index File with OpenAPI Path}
 \usage{
-swagger_spec(apiPath = "http://petstore.swagger.io/v2/swagger.json")
-
-swagger_spec3(apiPath = "http://petstore.swagger.io/v2/swagger.json")
+swagger_spec(apiPath = "http://petstore.swagger.io/v2/swagger.json",
+  version = "3")
 }
 \arguments{
 \item{apiPath}{Path to an openAPI specification}
+
+\item{version}{Major version number to be used for Swagger UI.  Currently version \code{"3"} is compatible with OpenAPI spec 2.0, 3.0.}
 }
 \value{
 large string containing the contents of \code{\link{swagger_index}()} with
   the appropriate speicification path changed to the \code{apiPath} value.
 }
 \description{
-Produces a \code{index.html} file that will attempt to access a provided API path.
+Produces the content for a \code{index.html} file that will attempt to access a provided API path.
 }
 \examples{
 if (interactive()) {

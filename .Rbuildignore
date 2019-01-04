@@ -4,3 +4,4 @@ README.md
 README.Rmd
 ^scripts
 ^inst/dist.*/.*\.map$
+^man-roxygen
