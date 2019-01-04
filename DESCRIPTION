@@ -4,6 +4,7 @@ Title: Dynamically Generates Documentation from a 'Swagger' Compliant API
 Version: 3.20.2.9999
 Authors@R: c(
     person("Javier", "Luraschi", email = "javier@rstudio.com", role = c("aut", "cre")),
+    person("Barret", "Schloerke", email = "barret@rstudio.com", role = "ctb"),
     person(family = "RStudio", role = c("cph")),
     person(family = "SmartBear Software", role = c("aut", "cph"))
     )
