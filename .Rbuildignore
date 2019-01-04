@@ -5,3 +5,4 @@ README.Rmd
 ^scripts
 ^inst/dist.*/.*\.map$
 ^man-roxygen
+^\.travis\.yml$
