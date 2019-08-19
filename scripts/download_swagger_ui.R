@@ -4,7 +4,7 @@ library(magrittr)
 library(devtools)
 
 (function() {
-  swagger_ui_version <- "3.20.4"
+  swagger_ui_version <- "3.23.5"
   to_location <- file.path(
     devtools::as.package(".")$path,
     "inst",
@@ -21,7 +21,7 @@ library(devtools)
 
   unlink(to_location, recursive = TRUE)
   dir.create(to_location, recursive = TRUE)
-  system(paste0("wget -r -p -np -l 15 -nH -P ", tmp_location, " https://unpkg.com/swagger-ui-dist@", swagger_ui_version, "/"))
+  system(paste0("wget -r -p -l 15 -nH -P ", tmp_location, " https://unpkg.com/swagger-ui-dist@", swagger_ui_version, "/"))
 
   file.path(tmp_location, paste0("swagger-ui-dist@", swagger_ui_version), "") %>%
     dir(full.names = TRUE) %>%
