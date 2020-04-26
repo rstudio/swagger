@@ -2,11 +2,12 @@
 
 library(magrittr)
 library(devtools)
+library(rvest)
 
 (function() {
-  swagger_ui_version <- "3.20.4"
+  swagger_ui_version <- "3.25.0"
   to_location <- file.path(
-    devtools::as.package(".")$path,
+    ".",
     "inst",
     paste0(
       "dist",
@@ -14,17 +15,13 @@ library(devtools)
     )
   )
 
-  tmp_location <- tempdir()
-  on.exit({
-    unlink(tmp_location)
-  })
-
   unlink(to_location, recursive = TRUE)
   dir.create(to_location, recursive = TRUE)
-  system(paste0("wget -r -p -np -l 15 -nH -P ", tmp_location, " https://unpkg.com/swagger-ui-dist@", swagger_ui_version, "/"))
 
-  file.path(tmp_location, paste0("swagger-ui-dist@", swagger_ui_version), "") %>%
-    dir(full.names = TRUE) %>%
-    lapply(file.copy, to = to_location)
+  swagger_release <- paste0("https://unpkg.com/swagger-ui-dist@", swagger_ui_version, "/")
+  files <- read_html(swagger_release) %>% html_nodes(".css-xt128v") %>% html_attr("href")
+  lapply(files, function(f) {
+    download.file(paste0(swagger_release, f), file.path(to_location, f))
+  })
 
 })()
