@@ -20,7 +20,7 @@ library(rvest)
 
   swagger_release <- paste0("https://unpkg.com/swagger-ui-dist@", swagger_ui_version, "/")
   files <- read_html(swagger_release) %>% html_nodes(".css-xt128v") %>% html_attr("href")
-  lapply(files, function(f) {
+  lapply(files[-grep(".map$", files)], function(f) {
     res <- download.file(paste0(swagger_release, f), file.path(to_location, f), mode = "wb")
     if (res != 0L) {
       message(paste("Download of", f, "failed."))
