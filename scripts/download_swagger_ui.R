@@ -4,7 +4,7 @@ library(magrittr)
 library(devtools)
 
 (function() {
-  swagger_ui_version <- "3.25.4"
+  swagger_ui_version <- "3.26.0"
   to_location <- file.path(
     devtools::as.package(".")$path,
     "inst",
