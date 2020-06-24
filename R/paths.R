@@ -71,3 +71,28 @@ swagger_spec <- function(api_path = "http://petstore.swagger.io/v2/swagger.json"
 
   index_txt
 }
+
+plumber_mount_interface <- function() {
+  if (requireNamespace("plumber", quietly = TRUE)) {
+    plumber::mountInterface(
+      list(
+        package = "swagger",
+        name = "swagger",
+        index = function(version = "3", ...) {
+          swagger::swagger_spec(
+            api_path = 'window.location.origin + window.location.pathname.replace(/\\(__swagger__\\\\/|__swagger__\\\\/index.html\\)$/, "") + "openapi.json"',
+            version = version
+          )
+        },
+        static = function(version = "3", ...) {
+          swagger::swagger_path(version)
+        }
+      )
+    )
+  }
+}
+
+.onLoad <- function(...) {
+  plumber_mount_interface()
+}
+

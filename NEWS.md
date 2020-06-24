@@ -1,3 +1,5 @@
+- Adds plumber `mountInterface` integration.
+
 # Swagger 3.9.3 (UNRELEASED)
 
 - Adds support for Swagger 3.9.3
