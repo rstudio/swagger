@@ -72,9 +72,17 @@ swagger_spec <- function(api_path = "http://petstore.swagger.io/v2/swagger.json"
   index_txt
 }
 
-plumber_mount_interface <- function() {
+plumber_add_ui <- function() {
   if (requireNamespace("plumber", quietly = TRUE)) {
-    plumber::mountInterface(
+    add_ui <- tryCatch(
+      plumber::add_ui,
+      error = function(err) {
+        function(...) {
+          return()
+        }
+      }
+    )
+    add_ui(
       list(
         package = "swagger",
         name = "swagger",
@@ -93,6 +101,6 @@ plumber_mount_interface <- function() {
 }
 
 .onLoad <- function(...) {
-  plumber_mount_interface()
+  plumber_add_ui()
 }
 
