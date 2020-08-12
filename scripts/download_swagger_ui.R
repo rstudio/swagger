@@ -5,7 +5,7 @@ library(devtools)
 library(rvest)
 
 (function() {
-  swagger_ui_version <- "3.25.0"
+  swagger_ui_version <- "3.31.1"
   to_location <- file.path(
     ".",
     "inst",
