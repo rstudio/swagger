@@ -4,8 +4,10 @@
 \alias{swagger_spec}
 \title{Swagger Index File with OpenAPI Path}
 \usage{
-swagger_spec(api_path = "http://petstore.swagger.io/v2/swagger.json",
-  version = "3")
+swagger_spec(
+  api_path = "http://petstore.swagger.io/v2/swagger.json",
+  version = "3"
+)
 }
 \arguments{
 \item{api_path}{Path to an openAPI specification}
