@@ -8,7 +8,8 @@ Authors@R: c(
     person(family = "RStudio", role = c("cph")),
     person(family = "SmartBear Software", role = c("aut", "cph"))
     )
-Maintainer: Javier Luraschi <javier@rstudio.com>
+Suggests:
+    plumber (>= 0.5)
 Description: A collection of 'HTML', 'JavaScript', and 'CSS' assets that
   dynamically generate beautiful documentation from a 'Swagger' compliant API:
   <https://swagger.io/specification/>.
