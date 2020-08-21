@@ -5,12 +5,12 @@
 \title{Swagger Index File with OpenAPI Path}
 \usage{
 swagger_spec(
-  api_path = "http://petstore.swagger.io/v2/swagger.json",
+  api_path = "\\"http://petstore.swagger.io/v2/swagger.json\\"",
   version = "3"
 )
 }
 \arguments{
-\item{api_path}{Path to an openAPI specification}
+\item{api_path}{Path to paste into the an OpenAPI specification file}
 
 \item{version}{Major version number to be used for Swagger UI.  Currently version \code{"3"} is compatible with OpenAPI spec 2.0, 3.0.}
 }
