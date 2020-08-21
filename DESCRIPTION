@@ -9,7 +9,9 @@ Authors@R: c(
     person(family = "SmartBear Software", role = c("aut", "cph"))
     )
 Suggests:
-    plumber
+    jsonlite,
+    plumber,
+    testthat
 Description: A collection of 'HTML', 'JavaScript', and 'CSS' assets that
   dynamically generate beautiful documentation from a 'Swagger' compliant API:
   <https://swagger.io/specification/>.
@@ -19,5 +21,3 @@ LazyData: true
 URL: https://github.com/rstudio/swagger
 BugReports: https://github.com/rstudio/swagger/issues
 RoxygenNote: 7.1.1
-Suggests: 
-    testthat
