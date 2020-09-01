@@ -7,7 +7,29 @@ Bumping the internal Swagger UI and added another function.
 Please let me know if there is anything else I can do.
 
 Best,
-Javier
+Barret
+
+#### 2020-9-1
+From: Javier Luraschi <javier@rstudio.com>
+Date: Tue, Sep 1, 2020 at 12:57 PM
+Subject: Re: Change maintainer on {swagger}
+To: Barret Schloerke <barret@rstudio.com>
+
+
+Changed with this [PR](https://github.com/rstudio/swagger/pull/16), all we have to do now is rebuild the package with this change and submit to CRAN.
+
+#### 2020-9-1
+From: Barret Schloerke <barret@rstudio.com>
+Date: Tue, Sep 1, 2020 at 12:43 PM
+Subject: Change maintainer on {swagger}
+To: Javier Luraschi <javier@rstudio.com>
+
+Hi Javier,
+
+Can we set the maintainer of `swagger` to be me, Barret Schloerke <barret@rstudio.com>?
+
+Thank you,
+Barret
 
 
 ## Test environments
