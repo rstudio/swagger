@@ -2,6 +2,14 @@
 
 skip_on_cran()
 
+# only test on `"mac"`
+skip_on_os(
+  setdiff(
+    c("windows", "mac", "linux", "solaris"),
+    "mac"
+  )
+)
+
 skip_if_not_installed("jsonlite")
 
 # read from latest major version installed
