@@ -34,7 +34,20 @@ plumber_docs <- function() {
     name = "swagger",
     index = function(version = "3", ...) {
       swagger_spec(
-        api_path = 'window.location.origin + window.location.pathname.replace(/\\(__swagger__\\\\/|__swagger__\\\\/index.html|__docs__\\\\/|__docs__\\\\/index.html\\)$/, "") + "openapi.json"',
+        api_path = paste0(
+          "window.location.origin + ",
+          "window.location.pathname.replace(",
+            "/\\(",
+              "__swagger__\\\\/|",
+              "__swagger__\\\\/",
+              "index.html|",
+              "__docs__\\\\/|",
+              "__docs__\\\\/",
+              "index.html",
+            "\\)$/, ",
+            "\"\"",
+          ') + "openapi.json"'
+        ),
         version = version
       )
     },

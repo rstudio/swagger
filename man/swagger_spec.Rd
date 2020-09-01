@@ -19,7 +19,8 @@ large string containing the contents of \code{\link{swagger_index}()} with
   the appropriate speicification path changed to the \code{api_path} value.
 }
 \description{
-Produces the content for a \code{index.html} file that will attempt to access a provided API path.
+Produces the content for a \code{index.html} file that will attempt
+to access a provided API path.
 }
 \examples{
 if (interactive()) {

@@ -7,3 +7,5 @@ README.Rmd
 ^man-roxygen
 ^\.travis\.yml$
 ^\.lintr$
+^\.github$
+^cran-comments\.md$
