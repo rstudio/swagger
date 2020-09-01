@@ -6,8 +6,10 @@ output:
     fig_height: 5
 ---
 
+<!-- badges: start -->
 [![CRAN_Status_Badge](https://www.r-pkg.org/badges/version/swagger)](https://cran.r-project.org/package=swagger)
-[![Travis-CI Build Status](https://travis-ci.org/schloerke/swagger.svg?branch=master)](https://travis-ci.org/schloerke/swagger)
+[![R build status](https://github.com/rstudio/swagger/workflows/R-CMD-check/badge.svg)](https://github.com/rstudio/swagger/actions)
+<!-- badges: end -->
 
 Swagger is a collection of HTML, Javascript, and CSS assets that
 dynamically generate beautiful documentation from a Swagger-compliant API.
