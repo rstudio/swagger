@@ -25,16 +25,16 @@ Useful links:
 
 }
 \author{
-\strong{Maintainer}: Javier Luraschi \email{javier@rstudio.com}
+\strong{Maintainer}: Barret Schloerke \email{barret@rstudio.com}
 
 Authors:
 \itemize{
+  \item Javier Luraschi \email{javier@rstudio.com}
   \item  SmartBear Software [copyright holder]
 }
 
 Other contributors:
 \itemize{
-  \item Barret Schloerke \email{barret@rstudio.com} [contributor]
   \item  RStudio [copyright holder]
 }
 
