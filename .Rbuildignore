@@ -8,3 +8,4 @@ README.Rmd
 ^\.travis\.yml$
 ^\.lintr$
 ^\.github$
+^cran-comments\.md$
