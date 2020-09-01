@@ -9,3 +9,4 @@ README.Rmd
 ^\.lintr$
 ^\.github$
 ^cran-comments\.md$
+^revdep$
