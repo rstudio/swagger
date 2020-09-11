@@ -6,7 +6,7 @@ library(rvest)
 
 local({
 
-  swagger_ui_version <- "3.32.5"
+  swagger_ui_version <- "3.33.0"
   to_location <- file.path(
     ".",
     "inst",
