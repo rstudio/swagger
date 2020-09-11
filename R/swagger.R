@@ -1,6 +1,6 @@
 #' swagger: Dynamically Generates Documentation from a Swagger-Compliant API
 #'
-#' Swagger is a collection of HTML, Javascript, and CSS assets that
+#' Swagger is a collection of HTML, JavaScript, and CSS assets that
 #' dynamically generate beautiful documentation from a Swagger-compliant API.
 #'
 #' The main purpose of this package is to enable package authors to create

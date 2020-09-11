@@ -53,7 +53,7 @@ swagger_index <- function(version = "3") {
 #' @param api_path Path to paste into the an OpenAPI specification file
 #' @template param-version
 #' @return large string containing the contents of \code{\link{swagger_index}()} with
-#'   the appropriate speicification path changed to the \code{api_path} value.
+#'   the appropriate specification path changed to the \code{api_path} value.
 #' @examples
 #' if (interactive()) {
 #'   swagger_spec("https://developer.uspto.gov/ibd-api/swagger.json")
