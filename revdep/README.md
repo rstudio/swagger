@@ -10,13 +10,13 @@
 |collate  |en_US.UTF-8                  |
 |ctype    |en_US.UTF-8                  |
 |tz       |America/New_York             |
-|date     |2020-09-01                   |
+|date     |2020-09-11                   |
 
 # Dependencies
 
 |package |old   |new    |Δ  |
 |:-------|:-----|:------|:--|
-|swagger |3.9.2 |3.32.5 |*  |
+|swagger |3.9.2 |3.33.0 |*  |
 
 # Revdeps
 

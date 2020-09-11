@@ -3,13 +3,12 @@
 <details>
 
 * Version: 1.10.0
+* GitHub: https://github.com/mlflow/mlflow
 * Source code: https://github.com/cran/mlflow
-* URL: https://github.com/mlflow/mlflow
-* BugReports: https://github.com/mlflow/mlflow/issues
 * Date/Publication: 2020-07-21 18:20:02 UTC
 * Number of recursive dependencies: 79
 
-Run `revdep_details(,"mlflow")` for more info
+Run `revdep_details(, "mlflow")` for more info
 
 </details>
 
