@@ -1,6 +1,6 @@
 ## Comments
 
-#### 2020-9-3
+#### 2020-9-11
 
 Bumping the internal Swagger UI and added another function.
 
@@ -35,19 +35,38 @@ Barret
 ## Test environments
 
 * local R installation, R 4.0.0
+  * 0 errors | 0 warnings | 0 notes
 * GitHub Actions
-  * macOS-latest, R release
-  * windows-latest, R release
-  * windows-latest, R oldrel
-  * ubuntu 16.04
-    * R devel
-    * R release
-    * R oldrel
-    * R 3.5
-    * R 3.4
-    * R 3.3
+  * Environments
+    * macOS-latest, R release
+    * windows-latest, R release
+    * windows-latest, R oldrel
+    * ubuntu 16.04
+      * R devel
+      * R release
+      * R oldrel
+      * R 3.5
+      * R 3.4
+      * R 3.3
+  * Results
+    * 0 errors | 0 warnings | 0 notes
+
+
 * win-builder (devel)
+  * checking CRAN incoming feasibility ... NOTE
+  Maintainer: 'Barret Schloerke <barret@rstudio.com>'
 
-## R CMD check results
+  Version jumps in minor (submitted: 3.33.0, existing: 3.9.2)
 
-0 errors | 0 warnings | 0 notes
+  New maintainer:
+    Barret Schloerke <barret@rstudio.com>
+  Old maintainer(s):
+    Javier Luraschi <javier@rstudio.com>
+
+
+## revdepcheck results
+
+We checked 2 reverse dependencies, comparing R CMD check results across CRAN and dev versions of this package.
+
+ * We saw 0 new problems
+ * We failed to check 0 packages
