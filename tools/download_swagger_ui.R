@@ -36,7 +36,7 @@ local({
     res == 0
   })
 
-  # shim in `validateUrl: null,`
+  # shim in rstudio/swagger config settings
   index_html_file <- file.path(to_location, "index.html")
   index_html <- readLines(index_html_file)
   petstore_line <- which(grepl("https://petstore.swagger.io/v2/swagger.json", index_html, fixed = TRUE))
@@ -44,7 +44,14 @@ local({
 
   updated_html <- append(
     index_html,
-    "        validatorUrl: null, // disable validation",
+    c(
+      "        validatorUrl: null, // disable validation",
+      "        // https://github.com/rstudio/swagger/pull/19",
+      "        syntaxHighlight: {",
+      "          activated: false,",
+      "          theme: \"agate\"",
+      "        },"
+    ),
     after = petstore_line
   )
   writeLines(updated_html, index_html_file)
