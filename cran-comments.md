@@ -1,40 +1,17 @@
 ## Comments
 
-#### 2020-9-11
+#### 2020-10-2
 
-Bumping the internal Swagger UI and added another function.
+Adjusting a display config value.
 
 Please let me know if there is anything else I can do.
 
 Best,
 Barret
 
-#### 2020-9-1
-From: Javier Luraschi <javier@rstudio.com>
-Date: Tue, Sep 1, 2020 at 12:57 PM
-Subject: Re: Change maintainer on {swagger}
-To: Barret Schloerke <barret@rstudio.com>
-
-
-Changed with this [PR](https://github.com/rstudio/swagger/pull/16), all we have to do now is rebuild the package with this change and submit to CRAN.
-
-#### 2020-9-1
-From: Barret Schloerke <barret@rstudio.com>
-Date: Tue, Sep 1, 2020 at 12:43 PM
-Subject: Change maintainer on {swagger}
-To: Javier Luraschi <javier@rstudio.com>
-
-Hi Javier,
-
-Can we set the maintainer of `swagger` to be me, Barret Schloerke <barret@rstudio.com>?
-
-Thank you,
-Barret
-
-
 ## Test environments
 
-* local R installation, R 4.0.0
+* local R installation, R 4.0.2
   * 0 errors | 0 warnings | 0 notes
 * GitHub Actions
   * Environments
@@ -53,20 +30,12 @@ Barret
 
 
 * win-builder (devel)
-  * checking CRAN incoming feasibility ... NOTE
-  Maintainer: 'Barret Schloerke <barret@rstudio.com>'
-
-  Version jumps in minor (submitted: 3.33.0, existing: 3.9.2)
-
-  New maintainer:
-    Barret Schloerke <barret@rstudio.com>
-  Old maintainer(s):
-    Javier Luraschi <javier@rstudio.com>
+    * 0 errors | 0 warnings | 0 notes
 
 
 ## revdepcheck results
 
-We checked 2 reverse dependencies, comparing R CMD check results across CRAN and dev versions of this package.
+We checked 3 reverse dependencies, comparing R CMD check results across CRAN and dev versions of this package.
 
  * We saw 0 new problems
  * We failed to check 0 packages
