@@ -1,3 +1,7 @@
+# Swagger (development)
+
+- Disable syntax highlighting to allow larger response bodies to not freeze the browser (#19)
+
 # Swagger 3.33.0
 
 - Adds support for Swagger 3.33.0
