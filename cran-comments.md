@@ -11,8 +11,12 @@ Barret
 
 ## Test environments
 
+* win-builder (devel)
+  * Status: OK
+
 * local R installation, R 4.0.2
   * 0 errors | 0 warnings | 0 notes
+
 * GitHub Actions
   * Environments
     * macOS-latest, R release
@@ -27,11 +31,6 @@ Barret
       * R 3.3
   * Results
     * 0 errors | 0 warnings | 0 notes
-
-
-* win-builder (devel)
-    * 0 errors | 0 warnings | 0 notes
-
 
 ## revdepcheck results
 
