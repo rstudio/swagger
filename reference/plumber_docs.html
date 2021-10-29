@@ -132,26 +132,26 @@ To avoid a circular dependency with `swagger` when `plumber` are starting up,
     <p>See the examples for how documentation should regularly be registered.</p>
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
-    <pre class="examples"><div class='input'><span class='kw'>if</span> <span class='op'>(</span><span class='cn'>FALSE</span><span class='op'>)</span> <span class='op'>{</span>
-<span class='co'>## Suggested setup for other packages trying to register visual docs for plumber</span>
-<span class='va'>.onLoad</span> <span class='op'>&lt;-</span> <span class='kw'>function</span><span class='op'>(</span><span class='va'>...</span><span class='op'>)</span> <span class='op'>{</span>
-  <span class='va'>plumber_register_ui</span> <span class='op'>&lt;-</span> <span class='kw'>function</span><span class='op'>(</span><span class='op'>)</span> <span class='op'>{</span>
-    <span class='kw'><a href='https://rdrr.io/r/base/conditions.html'>tryCatch</a></span><span class='op'>(</span><span class='op'>{</span>
-      <span class='fu'><a href='https://rdrr.io/r/base/do.call.html'>do.call</a></span><span class='op'>(</span><span class='fu'>plumber</span><span class='fu'>::</span><span class='va'>register_ui</span>, <span class='fu'>plumber_docs</span><span class='op'>(</span><span class='op'>)</span><span class='op'>)</span>
-    <span class='op'>}</span>, error <span class='op'>=</span> <span class='kw'>function</span><span class='op'>(</span><span class='va'>e</span><span class='op'>)</span> <span class='op'>{</span>
-      <span class='fu'><a href='https://rdrr.io/r/base/message.html'>message</a></span><span class='op'>(</span><span class='st'>"Error registering swagger docs. Error: "</span>, <span class='va'>e</span><span class='op'>)</span>
-    <span class='op'>}</span><span class='op'>)</span>
-  <span class='op'>}</span>
-
-  <span class='fu'><a href='https://rdrr.io/r/base/userhooks.html'>setHook</a></span><span class='op'>(</span><span class='fu'><a href='https://rdrr.io/r/base/userhooks.html'>packageEvent</a></span><span class='op'>(</span><span class='st'>"plumber"</span>, <span class='st'>"onLoad"</span><span class='op'>)</span>, <span class='kw'>function</span><span class='op'>(</span><span class='va'>...</span><span class='op'>)</span> <span class='op'>{</span>
-    <span class='fu'>plumber_register_ui</span><span class='op'>(</span><span class='op'>)</span>
-  <span class='op'>}</span><span class='op'>)</span>
-  <span class='kw'>if</span> <span class='op'>(</span><span class='st'>"plumber"</span> <span class='op'>%in%</span> <span class='fu'><a href='https://rdrr.io/r/base/ns-load.html'>loadedNamespaces</a></span><span class='op'>(</span><span class='op'>)</span><span class='op'>)</span> <span class='op'>{</span>
-    <span class='fu'>plumber_register_ui</span><span class='op'>(</span><span class='op'>)</span>
-  <span class='op'>}</span>
-<span class='op'>}</span>
-<span class='op'>}</span>
-</div></pre>
+    <pre class="examples"><span class='r-in'><span class='kw'>if</span> <span class='op'>(</span><span class='cn'>FALSE</span><span class='op'>)</span> <span class='op'>{</span></span>
+<span class='r-in'><span class='co'>## Suggested setup for other packages trying to register visual docs for plumber</span></span>
+<span class='r-in'><span class='va'>.onLoad</span> <span class='op'>&lt;-</span> <span class='kw'>function</span><span class='op'>(</span><span class='va'>...</span><span class='op'>)</span> <span class='op'>{</span></span>
+<span class='r-in'>  <span class='va'>plumber_register_ui</span> <span class='op'>&lt;-</span> <span class='kw'>function</span><span class='op'>(</span><span class='op'>)</span> <span class='op'>{</span></span>
+<span class='r-in'>    <span class='kw'><a href='https://rdrr.io/r/base/conditions.html'>tryCatch</a></span><span class='op'>(</span><span class='op'>{</span></span>
+<span class='r-in'>      <span class='fu'><a href='https://rdrr.io/r/base/do.call.html'>do.call</a></span><span class='op'>(</span><span class='fu'>plumber</span><span class='fu'>::</span><span class='va'>register_ui</span>, <span class='fu'>plumber_docs</span><span class='op'>(</span><span class='op'>)</span><span class='op'>)</span></span>
+<span class='r-in'>    <span class='op'>}</span>, error <span class='op'>=</span> <span class='kw'>function</span><span class='op'>(</span><span class='va'>e</span><span class='op'>)</span> <span class='op'>{</span></span>
+<span class='r-in'>      <span class='fu'><a href='https://rdrr.io/r/base/message.html'>message</a></span><span class='op'>(</span><span class='st'>"Error registering swagger docs. Error: "</span>, <span class='va'>e</span><span class='op'>)</span></span>
+<span class='r-in'>    <span class='op'>}</span><span class='op'>)</span></span>
+<span class='r-in'>  <span class='op'>}</span></span>
+<span class='r-in'></span>
+<span class='r-in'>  <span class='fu'><a href='https://rdrr.io/r/base/userhooks.html'>setHook</a></span><span class='op'>(</span><span class='fu'><a href='https://rdrr.io/r/base/userhooks.html'>packageEvent</a></span><span class='op'>(</span><span class='st'>"plumber"</span>, <span class='st'>"onLoad"</span><span class='op'>)</span>, <span class='kw'>function</span><span class='op'>(</span><span class='va'>...</span><span class='op'>)</span> <span class='op'>{</span></span>
+<span class='r-in'>    <span class='fu'>plumber_register_ui</span><span class='op'>(</span><span class='op'>)</span></span>
+<span class='r-in'>  <span class='op'>}</span><span class='op'>)</span></span>
+<span class='r-in'>  <span class='kw'>if</span> <span class='op'>(</span><span class='st'>"plumber"</span> <span class='op'><a href='https://rdrr.io/r/base/match.html'>%in%</a></span> <span class='fu'><a href='https://rdrr.io/r/base/ns-load.html'>loadedNamespaces</a></span><span class='op'>(</span><span class='op'>)</span><span class='op'>)</span> <span class='op'>{</span></span>
+<span class='r-in'>    <span class='fu'>plumber_register_ui</span><span class='op'>(</span><span class='op'>)</span></span>
+<span class='r-in'>  <span class='op'>}</span></span>
+<span class='r-in'><span class='op'>}</span></span>
+<span class='r-in'><span class='op'>}</span></span>
+</pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
     <nav id="toc" data-toggle="toc" class="sticky-top">
