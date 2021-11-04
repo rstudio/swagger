@@ -18,6 +18,6 @@ Description: A collection of 'HTML', 'JavaScript', and 'CSS' assets that
 License: Apache License 2.0 | file LICENSE
 Encoding: UTF-8
 LazyData: true
-URL: https://github.com/rstudio/swagger
+URL: https://rstudio.github.io/swagger/, https://github.com/rstudio/swagger
 BugReports: https://github.com/rstudio/swagger/issues
 RoxygenNote: 7.1.1
