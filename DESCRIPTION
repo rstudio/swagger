@@ -20,4 +20,4 @@ Encoding: UTF-8
 LazyData: true
 URL: https://rstudio.github.io/swagger/, https://github.com/rstudio/swagger
 BugReports: https://github.com/rstudio/swagger/issues
-RoxygenNote: 7.1.1
+RoxygenNote: 7.1.2

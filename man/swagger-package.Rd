@@ -19,6 +19,7 @@ To learn more about Swagger visit: \url{https://swagger.io/swagger-ui/}
 \seealso{
 Useful links:
 \itemize{
+  \item \url{https://rstudio.github.io/swagger/}
   \item \url{https://github.com/rstudio/swagger}
   \item Report bugs at \url{https://github.com/rstudio/swagger/issues}
 }
