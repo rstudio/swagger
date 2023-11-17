@@ -1,3 +1,9 @@
+# Swagger 5.10.0
+
+- Adds support for Swagger 5.10.0 (version 5)
+- Adds support for Swagger 4.19.1 (version 4)
+- Update version 3 distribution to 3.52.5
+
 # Swagger 3.33.1
 
 - Disable syntax highlighting to allow larger response bodies to not freeze the browser (#19)
