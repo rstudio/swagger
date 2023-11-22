@@ -1,7 +1,9 @@
 test_that("match_version accepts only known versions", {
   expect_equal(match_version("3"), "3")
+  expect_equal(match_version("4"), "4")
+  expect_equal(match_version("5"), "5")
 
-  expect_error(match_version(3))
+  expect_equal(match_version(3), "3")
   expect_error(match_version("32"))
   expect_error(match_version("23"))
   expect_error(match_version("2"))
@@ -10,14 +12,22 @@ test_that("match_version accepts only known versions", {
 test_that("swagger_path returns a file path", {
   expect_true(file.exists(swagger_path()))
   expect_true(file.exists(swagger_path("3")))
-  expect_equal(swagger_path("3"), swagger_path())
+  expect_true(file.exists(swagger_path(3)))
+  expect_true(file.exists(swagger_path("4")))
+  expect_true(file.exists(swagger_path("5")))
+  expect_equal(swagger_path(5), swagger_path())
+  expect_equal(swagger_path("5"), swagger_path())
 })
 
 
 test_that("swagger_index returns a file path", {
   expect_true(file.exists(swagger_index()))
   expect_true(file.exists(swagger_path("3")))
-  expect_equal(swagger_index("3"), swagger_index())
+  expect_true(file.exists(swagger_path(3)))
+  expect_true(file.exists(swagger_path("4")))
+  expect_true(file.exists(swagger_path("5")))
+  expect_equal(swagger_index(5), swagger_index())
+  expect_equal(swagger_index("5"), swagger_index())
 })
 
 

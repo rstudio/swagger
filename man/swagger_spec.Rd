@@ -6,7 +6,7 @@
 \usage{
 swagger_spec(
   api_path = "\\"http://petstore.swagger.io/v2/swagger.json\\"",
-  version = "3"
+  version = "5"
 )
 }
 \arguments{
