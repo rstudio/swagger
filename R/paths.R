@@ -1,4 +1,4 @@
-match_version <- function(version = "3") {
+match_version <- function(version = "5") {
   version <- as.character(version)
   match.arg(version, c("3", "4", "5"), several.ok = FALSE)
 }
@@ -19,7 +19,7 @@ match_version <- function(version = "3") {
 #'
 #' @export
 #' @rdname swagger_path
-swagger_path <- function(version = "3") {
+swagger_path <- function(version = "5") {
   system.file(
     paste0("dist", match_version(version)),
     package = "swagger"
@@ -41,7 +41,7 @@ swagger_path <- function(version = "3") {
 #'
 #' @export
 #' @rdname swagger_index
-swagger_index <- function(version = "3") {
+swagger_index <- function(version = "5") {
   file.path(swagger_path(version = version), "index.html")
 }
 
@@ -63,7 +63,7 @@ swagger_index <- function(version = "3") {
 #' @rdname swagger_spec
 swagger_spec <- function(
   api_path = "\"http://petstore.swagger.io/v2/swagger.json\"",
-  version = "3"
+  version = "5"
 ) {
 
   index_file <- swagger_index(version = version)

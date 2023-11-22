@@ -3,9 +3,10 @@ Type: Package
 Title: Dynamically Generates Documentation from a 'Swagger' Compliant API
 Version: 5.10.0
 Authors@R: c(
-    person("Barret", "Schloerke", email = "barret@rstudio.com", role = c("cre", "aut")),
-    person("Javier", "Luraschi", email = "javier@rstudio.com", role = c("aut")),
-    person(family = "RStudio", role = c("cph")),
+    person("Barret", "Schloerke", role = c("cre", "aut"), email = "barret@rstudio.com", comment = c(ORCID = "0000-0001-9986-114X")),
+    person("Javier", "Luraschi", role = "aut", email = "javier@rstudio.com"),
+    person("Bruno", "Tremblay", role = "ctb", email = "cran@neoxone.com"),
+    person(family = "RStudio", role = "cph"),
     person(family = "SmartBear Software", role = c("aut", "cph"))
     )
 Suggests:
@@ -17,7 +18,6 @@ Description: A collection of 'HTML', 'JavaScript', and 'CSS' assets that
   <https://swagger.io/specification/>.
 License: Apache License 2.0 | file LICENSE
 Encoding: UTF-8
-LazyData: true
 URL: https://rstudio.github.io/swagger/, https://github.com/rstudio/swagger
 BugReports: https://github.com/rstudio/swagger/issues
 RoxygenNote: 7.2.3
