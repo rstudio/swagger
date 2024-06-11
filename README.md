@@ -15,6 +15,6 @@ library(swagger)
 browseURL(swagger_index())
 ```
 
-<img src="tools/readme/browse_swagger.png" width=450 />
+<img src="man/figures/browse_swagger.png" width=450 />
 
 To learn more about Swagger visit: [swagger.io/swagger-ui](https://swagger.io/swagger-ui/)
