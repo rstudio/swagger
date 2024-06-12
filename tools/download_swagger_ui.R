@@ -2,7 +2,7 @@ library(magrittr)
 library(devtools)
 library(rvest)
 
-for (swagger_ui_version in c("3.52.5", "4.19.1", "5.10.0")) {
+for (swagger_ui_version in c("3.52.5", "4.19.1", "5.17.14")) {
 
   local({
 

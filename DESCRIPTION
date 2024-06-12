@@ -1,11 +1,11 @@
 Package: swagger
 Type: Package
 Title: Dynamically Generates Documentation from a 'Swagger' Compliant API
-Version: 5.10.0
+Version: 5.17.14
 Authors@R: c(
-    person("Barret", "Schloerke", role = c("cre", "aut"), email = "barret@rstudio.com", comment = c(ORCID = "0000-0001-9986-114X")),
+    person("Barret", "Schloerke", role = "aut", email = "barret@rstudio.com", comment = c(ORCID = "0000-0001-9986-114X")),
     person("Javier", "Luraschi", role = "aut", email = "javier@rstudio.com"),
-    person("Bruno", "Tremblay", role = "ctb", email = "cran@neoxone.com"),
+    person("Bruno", "Tremblay", role = c("cre", "ctb"), email = "cran@neoxone.com"),
     person(family = "RStudio", role = "cph"),
     person(family = "SmartBear Software", role = c("aut", "cph"))
     )
@@ -20,4 +20,4 @@ License: Apache License 2.0 | file LICENSE
 Encoding: UTF-8
 URL: https://rstudio.github.io/swagger/, https://github.com/rstudio/swagger
 BugReports: https://github.com/rstudio/swagger/issues
-RoxygenNote: 7.2.3
+RoxygenNote: 7.3.1
