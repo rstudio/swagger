@@ -12,3 +12,4 @@ README.Rmd
 ^revdep$
 ^CRAN-RELEASE$
 ^tools$
+^CRAN-SUBMISSION$
