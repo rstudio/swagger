@@ -1,3 +1,7 @@
+# Swagger 5.17.14.1
+
+- Skip a test on CRAN.
+
 # Swagger 5.17.14
 
 - Update support for Swagger 5.17.14 (version 5)
