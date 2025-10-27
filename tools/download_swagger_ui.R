@@ -2,7 +2,7 @@ library(magrittr)
 library(devtools)
 library(rvest)
 
-for (swagger_ui_version in c("3.52.5", "4.19.1", "5.17.14")) {
+for (swagger_ui_version in c("3.52.5", "4.19.1", "5.30.0")) {
 
   local({
 
@@ -21,7 +21,7 @@ for (swagger_ui_version in c("3.52.5", "4.19.1", "5.17.14")) {
     dir.create(to_location, recursive = TRUE)
 
     swagger_release <- paste0("https://unpkg.com/swagger-ui-dist@", swagger_ui_version, "/")
-    files <- read_html(swagger_release) %>% html_nodes(".css-xt128v") %>% html_attr("href")
+    files <- read_html(swagger_release) %>% html_nodes("a.py-3") %>% html_attr("href")
 
     lapply(files, function(f) {
       # files are large and make CRAN upset
@@ -29,7 +29,7 @@ for (swagger_ui_version in c("3.52.5", "4.19.1", "5.17.14")) {
       # files are not included in html
       if (grepl("es-bundle", f)) return()
 
-      res <- download.file(paste0(swagger_release, f), file.path(to_location, f), mode = "wb")
+      res <- download.file(paste0(swagger_release, basename(f)), file.path(to_location, basename(f)), mode = "wb")
       if (res != 0L) {
         message(paste("Download of", f, "failed."))
       }
