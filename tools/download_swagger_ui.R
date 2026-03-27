@@ -1,8 +1,7 @@
-library(magrittr)
 library(devtools)
 library(rvest)
 
-for (swagger_ui_version in c("3.52.5", "4.19.1", "5.30.0")) {
+for (swagger_ui_version in c("3.52.5", "4.19.1", "5.32.1")) {
 
   local({
 
@@ -21,7 +20,7 @@ for (swagger_ui_version in c("3.52.5", "4.19.1", "5.30.0")) {
     dir.create(to_location, recursive = TRUE)
 
     swagger_release <- paste0("https://unpkg.com/swagger-ui-dist@", swagger_ui_version, "/")
-    files <- read_html(swagger_release) %>% html_nodes("a.py-3") %>% html_attr("href")
+    files <- read_html(swagger_release) |> html_nodes("a.py-3") |> html_attr("href")
 
     lapply(files, function(f) {
       # files are large and make CRAN upset

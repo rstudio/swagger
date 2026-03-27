@@ -1,3 +1,7 @@
+# Swagger 5.32.1
+
+- Update support for Swagger 5.32.1 (version 5)
+
 # Swagger 5.30.0
 
 - Update support for Swagger 5.30.0 (version 5)
