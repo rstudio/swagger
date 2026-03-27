@@ -1,30 +1,32 @@
 # Platform
 
-|field    |value                        |
-|:--------|:----------------------------|
-|version  |R version 4.0.2 (2020-06-22) |
-|os       |macOS Catalina 10.15.7       |
-|system   |x86_64, darwin17.0           |
-|ui       |X11                          |
-|language |(EN)                         |
-|collate  |en_US.UTF-8                  |
-|ctype    |en_US.UTF-8                  |
-|tz       |America/New_York             |
-|date     |2020-10-02                   |
+|field    |value                                        |
+|:--------|:--------------------------------------------|
+|version  |R version 4.5.3 (2026-03-11)                 |
+|os       |Fedora Linux 43 (KDE Plasma Desktop Edition) |
+|system   |x86_64, linux-gnu                            |
+|ui       |X11                                          |
+|language |(EN)                                         |
+|collate  |en_CA.UTF-8                                  |
+|ctype    |en_CA.UTF-8                                  |
+|tz       |America/Toronto                              |
+|date     |2026-03-27                                   |
+|pandoc   |3.6.4 @ /usr/bin/pandoc                      |
+|quarto   |1.9.36 @ /usr/local/bin/quarto               |
 
 # Dependencies
 
-|package |old    |new    |Δ  |
-|:-------|:------|:------|:--|
-|swagger |3.33.0 |3.33.1 |*  |
+|package |old       |new    |Δ  |
+|:-------|:---------|:------|:--|
+|swagger |5.17.14.1 |5.32.1 |*  |
 
 # Revdeps
 
-## All (3)
+## Failed to check (3)
 
-|package                      |version |error |warning |note |
-|:----------------------------|:-------|:-----|:-------|:----|
-|[mlflow](problems.md#mlflow) |1.10.0  |      |        |1    |
-|plumber                      |1.0.0   |      |        |     |
-|tfdeploy                     |0.6.1   |      |        |     |
+|package  |version |error |warning |note |
+|:--------|:-------|:-----|:-------|:----|
+|mlflow   |?       |      |        |     |
+|plumber  |?       |      |        |     |
+|plumber2 |?       |      |        |     |
 
